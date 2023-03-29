@@ -1,3 +1,5 @@
+# Ella Cook, Ryan Hawkins, Tiffany Zang, Cassidy Haristy, Kira Coleman, Grace Chu
+
 """
 Django settings for missingPersons project.
 
