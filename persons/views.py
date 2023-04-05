@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 def indexPageView(request) :
+    return render(request, 'persons/index.html')
+
+def tablePageView(request) :
     lstpersons = [
             {
                 "date_missing": "10/30/2009",
@@ -183,10 +186,7 @@ def indexPageView(request) :
         "title" : "Missing Persons",
         "data" : lstpersons
     }
-    return render(request, 'persons/index.html', context)
-
-def tablePageView(request) :
-    return render(request, 'persons/table.html')
+    return render(request, 'persons/table.html', context)
 
 def aboutPageView(request) :
     return render(request, 'persons/about.html')
