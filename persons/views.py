@@ -185,3 +185,9 @@ def indexPageView(request) :
         "data" : lstpersons
     }
     return render(request, 'persons/index.html', context)
+
+def tablePageView(request) :
+    return render(request, 'persons/table.html')
+
+def aboutPageView(request) :
+    return render(request, 'persons/about.html')
