@@ -2,6 +2,41 @@
 {% load static %}
 {% block content %}
 
-
+<section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5">
+            <h3 class="text-center mb-5" style="font-weight: bolder">Utah Victims of Human Trafficking</h3>
+                    
+                <table class="table table-bordered table-striped table-hover table-condensed text-center" style="border: 1px solid black">
+                        <tr>
+                            <th title="Field #1">Date Missing</th>
+                            <th title="Field #2">Last Name</th>
+                            <th title="Field #3">First Name</th>
+                            <th title="Field #4">Age At Missing</th>
+                            <th title="Field #5">City</th>
+                            <th title="Field #6">State</th>
+                            <th title="Field #7">Gender</th>
+                            <th title="Field #8">Race</th>
+                            <th title="Field #8">More Details</th>
+                        </tr>
+                        {% for oPerson in data %}
+                        <tr>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.date_missing}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.last_name}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.first_name}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.age_at_missing}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.city}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.state}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.gender}}</td>
+                            <td style="text-align: center; border:1px solid black;">{{oPerson.race}}</td>
+                            <td><button type="submit" value="Click Me"onclick="location.href='{% url 'index' %}'" name='myButton'>Click the Details</td>
+                        </tr>
+                        {% endfor %}
+                </table>
+                    
+        </div>
+    </div>
+</section>
 
 {% endblock %}
