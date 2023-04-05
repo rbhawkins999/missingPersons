@@ -30,7 +30,9 @@
                             <td style="text-align: center; border:1px solid black;">{{oPerson.state}}</td>
                             <td style="text-align: center; border:1px solid black;">{{oPerson.gender}}</td>
                             <td style="text-align: center; border:1px solid black;">{{oPerson.race}}</td>
-                            <td><button type="submit" value="Click Me"onclick="location.href='{% url 'index' %}'" name='myButton'>Click the Details</td>
+                            <td>
+                                <a type="button" class="btn btn-primary" onclick="location.href='{% url 'index' %}'" name="myButton"> Click the Details</a>
+                            </td>
                         </tr>
                         {% endfor %}
                 </table>
