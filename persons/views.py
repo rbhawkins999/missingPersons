@@ -188,3 +188,6 @@ def indexPageView(request) :
 
 def tablePageView(request) :
     return render(request, 'persons/table.html')
+
+def aboutPageView(request) :
+    return render(request, 'persons/about.html')
