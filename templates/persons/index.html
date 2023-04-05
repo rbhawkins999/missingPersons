@@ -35,6 +35,7 @@
                                     <th title="Field #6">State</th>
                                     <th title="Field #7">Gender</th>
                                     <th title="Field #8">Race</th>
+                                    <th title="Field #8">More Details</th>
                                 </tr>
                                 {% for oPerson in data %}
                                 <tr>
@@ -46,6 +47,7 @@
                                     <td style="text-align: center; border:1px solid black;">{{oPerson.state}}</td>
                                     <td style="text-align: center; border:1px solid black;">{{oPerson.gender}}</td>
                                     <td style="text-align: center; border:1px solid black;">{{oPerson.race}}</td>
+                                    <td><button type="submit" value="Click Me"onclick="location.href='{% url 'index' %}'" name='myButton'>Click the Details</td>
                                 </tr>
                                 {% endfor %}
                         </table>
