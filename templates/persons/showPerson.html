@@ -1,13 +1,46 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">{{data.first_name}}</h1>
+                <h2 class="text-white-50 mx-auto mt-4 mb-5">These are the victims of human trafficking. Some have been missing for over <i>10 years</i>. They stand as a reminder to us that these people are innocents, and we need to be their voice.</h2>
+                <a class="btn btn-primary" href="#projects">Check this out!!!!</a>
+            </div> 
+        </div>
+    </div>
+</header>
+<section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5">
+
 <p>Some info:</p>
 <form>
+    <label>Date Missing</label>
+    <input type="text" value="{{data.date_missing}}">
+    <br>
+    <label>Last Name</label>
+    <input type="text" value="{{data.last_name}}">   
+    <br>
     <label>First Name</label>
     <input type="text" value="{{data.first_name}}">
     <br>
-    <label>Last Name</label>
-    <input type="text" value="{{data.last_name}}">            
+    <label>Age at Missing</label>
+    <input type="text" value="{{data.age_at_missing}}"> 
+    <br>
+    <label>City</label>
+    <input type="text" value="{{data.city}}"> 
+    <br>
+    <label>State</label>
+    <input type="text" value="{{data.state}}"> 
+    <br>
+    <label>Gender</label>
+    <input type="text" value="{{data.gender}}"> 
+    <br>
+    <label>Race</label>
+    <input type="text" value="{{data.race}}">          
 </form>    
 
 

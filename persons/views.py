@@ -11,7 +11,7 @@ def tablePageView(request) :
     context = {
         "data" : db_person
     }
-    return render(request, 'persons/showPerson.html', context)
+    return render(request, 'persons/table.html', context)
 
     # lstpersons = [
     #         {
@@ -196,7 +196,7 @@ def tablePageView(request) :
     # }
     # return render(request, 'persons/table.html', context)
 
-def showPersonPageView(request) :
+def showPersonPageView(request, id) :
     person = Person.objects.get(id=id)
 
     context= {
