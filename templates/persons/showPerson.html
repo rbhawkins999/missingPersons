@@ -7,17 +7,28 @@
         <div class="d-flex justify-content-center">
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">{{data.first_name}}</h1>
-                <h2 class="text-white-50 mx-auto mt-4 mb-5">These are the victims of human trafficking. Some have been missing for over <i>10 years</i>. They stand as a reminder to us that these people are innocents, and we need to be their voice.</h2>
-                <a class="btn btn-primary" href="#projects">Check this out!!!!</a>
+                <h2 class="text-white-50 mx-auto mt-4 mb-5">I am missing...</h2>
+                <a class="btn btn-primary" href="#info">View Info</a>
             </div> 
         </div>
     </div>
 </header>
-<section class="projects-section bg-light" id="projects">
-    <div class="container px-4 px-lg-5">
-
-<p>Some info:</p>
-<form>
+<section class="projects-section bg-light" id="info">
+    <p class="text-center"><b>Person Info</b></p>
+    <div class="container mb-5">
+        <ul class="list-group">
+            <li class="list-group-item"><b>Date Missing: </b>{{data.date_missing}}</li>
+            <li class="list-group-item"><b>Last Name: </b>{{data.last_name}}</li>
+            <li class="list-group-item"><b>First Name: </b>{{data.first_name}}</li>
+            <li class="list-group-item"><b>Age at Missing: </b>{{data.age_at_missing}}</li>
+            <li class="list-group-item"><b>City: </b>{{data.city}}</li>
+            <li class="list-group-item"><b>State: </b>{{data.state}}</li>
+            <li class="list-group-item"><b>Gender: </b>{{data.gender}}</li>
+            <li class="list-group-item"><b>Race: </b>{{data.race}}</li>
+        </ul>
+    </div>
+</section>
+<!-- <form>
     <label>Date Missing</label>
     <input type="text" value="{{data.date_missing}}">
     <br>
@@ -41,9 +52,6 @@
     <br>
     <label>Race</label>
     <input type="text" value="{{data.race}}">          
-</form>    
-
-
-
+</form>     -->
 
 {% endblock %}
