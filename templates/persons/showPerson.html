@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<p>Some info:</p>
+<form>
+    <label>First Name</label>
+    <input type="text" value="{{data.first_name}}">
+    <br>
+    <label>Last Name</label>
+    <input type="text" value="{{data.last_name}}">            
+</form>    
+
+
+
+
+{% endblock %}

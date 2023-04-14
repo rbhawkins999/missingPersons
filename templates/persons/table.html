@@ -43,7 +43,7 @@
                             <td style="text-align: center; border:1px solid black;">{{oPerson.gender}}</td>
                             <td style="text-align: center; border:1px solid black;">{{oPerson.race}}</td>
                             <td>
-                                <a type="button" class="btn btn-primary" href="{% url 'about' %}" name="myButton"> Click For Details</a>
+                                <a type="button" class="btn btn-primary" href="{% url 'person' id=oPerson %}" name="myButton"> Click For Details</a>
                             </td>
                         </tr>
                         {% endfor %}
